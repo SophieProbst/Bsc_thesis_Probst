@@ -6,8 +6,8 @@ import numpy as np
 
 #rewrite the function so that it returns all timestamps for a given target name not just the first one
 def get_timestamps(target_name, timestamps):
-    timestamps= np.loadtxt('superflares.txt', dtype='str', usecols=11)
-    target_names= np.loadtxt('superflares.txt', dtype='str', usecols=0)
+    timestamps= np.loadtxt('superflares_2.txt', dtype='str', usecols=11)
+    target_names= np.loadtxt('superflares_2.txt', dtype='str', usecols=0)
     timestamps_list= []
     for i in range(len(target_names)):
         if target_name == target_names[i]:
